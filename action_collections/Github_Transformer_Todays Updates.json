@@ -1,0 +1,46 @@
+{
+  "unpublishedCollection": {
+    "name": "Github_Transformer",
+    "pageId": "Todays Updates",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "defaultToBranchedActionIdsMap": {},
+    "actionIds": [],
+    "archivedActionIds": [],
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tresults: [],\n\tgetCriticalIssues: () => {\n\t\treturn fetchCriticalIssues.data.map((issue) => { \n\t\t\treturn { \n\t\t\t\ttitle: issue.title, \n\t\t\t\tuser: issue.user.login, \n\t\t\t\tage: issue.create_at, \n\t\t\t\tlabels: issue.labels.map((label) => label.name).join(', '),\n\t\t\t\tassignees: issue.assignees.map((label) => label.login).join(', '), \n\t\t\t\tlink: issue.html_url, \n\t\t\t\tbody: issue.body, \n\t\t\t\tnumber: issue.number\n\t\t\t};\n\t\t})\n\t}\n}",
+    "variables": [
+      {
+        "name": "results",
+        "value": []
+      }
+    ]
+  },
+  "publishedCollection": {
+    "name": "Github_Transformer",
+    "pageId": "Todays Updates",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "defaultToBranchedActionIdsMap": {},
+    "actionIds": [],
+    "defaultToBranchedArchivedActionIdsMap": {},
+    "archivedActionIds": [],
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tresults: [],\n\tgetCriticalIssues: () => {\n\t\treturn fetchCriticalIssues.data.map((issue) => { \n\t\t\treturn { \n\t\t\t\ttitle: issue.title, \n\t\t\t\tuser: issue.user.login, \n\t\t\t\tage: issue.create_at, \n\t\t\t\tlabels: issue.labels.map((label) => label.name).join(', '),\n\t\t\t\tassignees: issue.assignees.map((label) => label.login).join(', '), \n\t\t\t\tlink: issue.html_url, \n\t\t\t\tbody: issue.body, \n\t\t\t\tnumber: issue.number\n\t\t\t};\n\t\t})\n\t}\n}",
+    "variables": [
+      {
+        "name": "results",
+        "value": []
+      }
+    ]
+  },
+  "id": "61cc060f06220a20ef3ec33c",
+  "deleted": false,
+  "userPermissions": [
+    "read:actions",
+    "execute:actions",
+    "manage:actions"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Appsmith Standup (1)",
+  "isPublic": false,
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#E4D8CC",
+  "icon": "team",
+  "slug": "appsmith-standup-1",
+  "publishedModeThemeId": "61c57741db67aa7828fd7472",
+  "editModeThemeId": "61c57741db67aa7828fd7472",
+  "createdAt": {
+    "seconds": 1639727267,
+    "nanos": 85000000
+  },
+  "deleted": false
+}
