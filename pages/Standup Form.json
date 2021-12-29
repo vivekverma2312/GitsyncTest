@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1990,
+          "bottomRow": 2300,
           "containerStyle": "none",
           "snapRows": 172,
           "parentRowSpace": 1,
@@ -730,6 +730,104 @@
                 "step": 62,
                 "status": 75
               }
+            },
+            {
+              "widgetName": "Button1",
+              "buttonColor": "#03B365",
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.cca02633.svg",
+              "topRow": 198,
+              "bottomRow": 202,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 20.0625,
+              "leftColumn": 19,
+              "text": "Submit",
+              "isDisabled": false,
+              "key": "kgevwhipyz",
+              "rightColumn": 35,
+              "isDefaultClickDisabled": true,
+              "widgetId": "eib0h5vew2",
+              "recaptchaV2": false,
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "buttonVariant": "PRIMARY"
+            },
+            {
+              "widgetName": "Chart1",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 196,
+              "bottomRow": 228,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "arieqfs0qc": {
+                  "seriesName": "Sales",
+                  "data": [
+                    {
+                      "x": "Product1",
+                      "y": 20000
+                    },
+                    {
+                      "x": "Product2",
+                      "y": 22000
+                    },
+                    {
+                      "x": "Product3",
+                      "y": 32000
+                    }
+                  ]
+                }
+              },
+              "animateLoading": true,
+              "parentColumnSpace": 20.0625,
+              "leftColumn": 37,
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "3i0z41j592",
+              "rightColumn": 61,
+              "widgetId": "iz3nqhb2vu",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "Revenue($)",
+              "chartName": "Sales Report",
+              "xAxisName": "Product Line",
+              "chartType": "COLUMN_CHART"
             }
           ]
         },
@@ -738,6 +836,7 @@
           "Form1",
           "Text9",
           "Text8",
+          "Button1",
           "Text7",
           "Text6",
           "Text5",
@@ -748,6 +847,7 @@
           "Rating2",
           "Rating1",
           "Rating3",
+          "Chart1",
           "blockedName",
           "todayWork",
           "Table1",
@@ -785,7 +885,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1990,
+          "bottomRow": 2300,
           "containerStyle": "none",
           "snapRows": 172,
           "parentRowSpace": 1,
@@ -1502,6 +1602,104 @@
                 "step": 62,
                 "status": 75
               }
+            },
+            {
+              "widgetName": "Button1",
+              "buttonColor": "#03B365",
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.cca02633.svg",
+              "topRow": 198,
+              "bottomRow": 202,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 20.0625,
+              "leftColumn": 19,
+              "text": "Submit",
+              "isDisabled": false,
+              "key": "kgevwhipyz",
+              "rightColumn": 35,
+              "isDefaultClickDisabled": true,
+              "widgetId": "eib0h5vew2",
+              "recaptchaV2": false,
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "buttonVariant": "PRIMARY"
+            },
+            {
+              "widgetName": "Chart1",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 196,
+              "bottomRow": 228,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "arieqfs0qc": {
+                  "seriesName": "Sales",
+                  "data": [
+                    {
+                      "x": "Product1",
+                      "y": 20000
+                    },
+                    {
+                      "x": "Product2",
+                      "y": 22000
+                    },
+                    {
+                      "x": "Product3",
+                      "y": 32000
+                    }
+                  ]
+                }
+              },
+              "animateLoading": true,
+              "parentColumnSpace": 20.0625,
+              "leftColumn": 37,
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "3i0z41j592",
+              "rightColumn": 61,
+              "widgetId": "iz3nqhb2vu",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "Revenue($)",
+              "chartName": "Sales Report",
+              "xAxisName": "Product Line",
+              "chartType": "COLUMN_CHART"
             }
           ]
         },
@@ -1510,6 +1708,7 @@
           "Form1",
           "Text9",
           "Text8",
+          "Button1",
           "Text7",
           "Text6",
           "Text5",
@@ -1520,6 +1719,7 @@
           "Rating2",
           "Rating1",
           "Rating3",
+          "Chart1",
           "blockedName",
           "todayWork",
           "Table1",
