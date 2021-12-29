@@ -4,7 +4,10 @@
     "pageId": "Standup Form",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "defaultToBranchedActionIdsMap": {},
+    "defaultToBranchedActionIdsMap": {
+      "61cbfe5506220a20ef3ec2f8": "61cbfe5506220a20ef3ec2f8",
+      "61cbfe5506220a20ef3ec2f6": "61cbfe5506220a20ef3ec2f6"
+    },
     "actionIds": [],
     "archivedActionIds": [],
     "actions": [],
@@ -26,7 +29,10 @@
     "pageId": "Standup Form",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "defaultToBranchedActionIdsMap": {},
+    "defaultToBranchedActionIdsMap": {
+      "61cbfe5506220a20ef3ec2f8": "61cbfe5506220a20ef3ec2f8",
+      "61cbfe5506220a20ef3ec2f6": "61cbfe5506220a20ef3ec2f6"
+    },
     "actionIds": [],
     "defaultToBranchedArchivedActionIdsMap": {},
     "archivedActionIds": [],
@@ -44,7 +50,7 @@
       }
     ]
   },
-  "id": "61cc070506220a20ef3ec385",
+  "id": "61cc079006220a20ef3ec39d",
   "deleted": false,
   "userPermissions": [
     "read:actions",

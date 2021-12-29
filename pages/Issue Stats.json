@@ -593,21 +593,21 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "61cc070506220a20ef3ec37f",
+              "id": "61bc40a3fb2237737d467715",
               "name": "fetchWidgetIssues2",
               "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "61cc070506220a20ef3ec37a",
+              "id": "61bc40a3fb2237737d467714",
               "name": "fetchLabels",
               "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "61cc070506220a20ef3ec37c",
+              "id": "61bc40a3fb2237737d467712",
               "name": "fetchWidgetIssues1",
               "pluginType": "API",
               "jsonPathKeys": [],
@@ -1220,21 +1220,21 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "61cc070506220a20ef3ec37f",
+              "id": "61bc40a3fb2237737d467715",
               "name": "fetchWidgetIssues2",
               "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "61cc070506220a20ef3ec37a",
+              "id": "61bc40a3fb2237737d467714",
               "name": "fetchLabels",
               "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "61cc070506220a20ef3ec37c",
+              "id": "61bc40a3fb2237737d467712",
               "name": "fetchWidgetIssues1",
               "pluginType": "API",
               "jsonPathKeys": [],
