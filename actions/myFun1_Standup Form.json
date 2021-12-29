@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Standup Form",
-    "collectionId": "61cc060f06220a20ef3ec33e",
+    "collectionId": "61cc070506220a20ef3ec383",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -53,7 +53,7 @@
       "userPermissions": []
     },
     "pageId": "Standup Form",
-    "collectionId": "61cc060f06220a20ef3ec33e",
+    "collectionId": "61cc070506220a20ef3ec383",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -79,7 +79,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "61cbfe5506220a20ef3ec2f8",
+  "id": "61cc070506220a20ef3ec37e",
   "deleted": false,
   "userPermissions": [
     "read:actions",

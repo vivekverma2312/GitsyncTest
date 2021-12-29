@@ -4,105 +4,13 @@
   "actionCollectionList": [
     {
       "unpublishedCollection": {
-        "name": "Github_Transformer",
-        "pageId": "Todays Updates",
-        "pluginId": "js-plugin",
-        "pluginType": "JS",
-        "defaultToBranchedActionIdsMap": {},
-        "actionIds": [],
-        "archivedActionIds": [],
-        "actions": [],
-        "archivedActions": [],
-        "body": "export default {\n\tresults: [],\n\tgetCriticalIssues: () => {\n\t\treturn fetchCriticalIssues.data.map((issue) => { \n\t\t\treturn { \n\t\t\t\ttitle: issue.title, \n\t\t\t\tuser: issue.user.login, \n\t\t\t\tage: issue.create_at, \n\t\t\t\tlabels: issue.labels.map((label) => label.name).join(', '),\n\t\t\t\tassignees: issue.assignees.map((label) => label.login).join(', '), \n\t\t\t\tlink: issue.html_url, \n\t\t\t\tbody: issue.body, \n\t\t\t\tnumber: issue.number\n\t\t\t};\n\t\t})\n\t}\n}",
-        "variables": [
-          {
-            "name": "results",
-            "value": []
-          }
-        ]
-      },
-      "publishedCollection": {
-        "name": "Github_Transformer",
-        "pageId": "Todays Updates",
-        "pluginId": "js-plugin",
-        "pluginType": "JS",
-        "defaultToBranchedActionIdsMap": {},
-        "actionIds": [],
-        "defaultToBranchedArchivedActionIdsMap": {},
-        "archivedActionIds": [],
-        "actions": [],
-        "archivedActions": [],
-        "body": "export default {\n\tresults: [],\n\tgetCriticalIssues: () => {\n\t\treturn fetchCriticalIssues.data.map((issue) => { \n\t\t\treturn { \n\t\t\t\ttitle: issue.title, \n\t\t\t\tuser: issue.user.login, \n\t\t\t\tage: issue.create_at, \n\t\t\t\tlabels: issue.labels.map((label) => label.name).join(', '),\n\t\t\t\tassignees: issue.assignees.map((label) => label.login).join(', '), \n\t\t\t\tlink: issue.html_url, \n\t\t\t\tbody: issue.body, \n\t\t\t\tnumber: issue.number\n\t\t\t};\n\t\t})\n\t}\n}",
-        "variables": [
-          {
-            "name": "results",
-            "value": []
-          }
-        ]
-      },
-      "id": "61bc40a3fb2237737d467716",
-      "deleted": false,
-      "userPermissions": [
-        "read:actions",
-        "execute:actions",
-        "manage:actions"
-      ]
-    },
-    {
-      "unpublishedCollection": {
-        "name": "Airtable_Transformer",
-        "pageId": "Todays Updates",
-        "pluginId": "js-plugin",
-        "pluginType": "JS",
-        "defaultToBranchedActionIdsMap": {},
-        "actionIds": [],
-        "archivedActionIds": [],
-        "actions": [],
-        "archivedActions": [],
-        "body": "export default {\n\tresults: [],\n\tgetUpdates: () => {\n\t\tconst updatedArray = fetchStandup.data.map((row) => {\n\t\t\treturn {\n\t\t\t\t...row,\n\t\t\t\t\t\"Created At\": row.date\n\t\t\t};\n\t\t});\n\t\treturn updatedArray.filter((row) => { \n\t\t\tif (Input1.text) {\n\t\t\t\treturn row.name.toLowerCase().includes(Input1.text.toLowerCase())\n\t\t\t} else if (Select1.selectedOptionValue) {\n\t\t\t\treturn row.pod == Select1.selectedOptionValue\n\t\t\t} else {\n\t\t\t\treturn true;\n\t\t\t}\n\t\t})\n\t}\n}",
-        "variables": [
-          {
-            "name": "results",
-            "value": []
-          }
-        ]
-      },
-      "publishedCollection": {
-        "name": "Airtable_Transformer",
-        "pageId": "Todays Updates",
-        "pluginId": "js-plugin",
-        "pluginType": "JS",
-        "defaultToBranchedActionIdsMap": {},
-        "actionIds": [],
-        "defaultToBranchedArchivedActionIdsMap": {},
-        "archivedActionIds": [],
-        "actions": [],
-        "archivedActions": [],
-        "body": "export default {\n\tresults: [],\n\tgetUpdates: () => {\n\t\tconst updatedArray = fetchStandup.data.map((row) => {\n\t\t\treturn {\n\t\t\t\t...row,\n\t\t\t\t\t\"Created At\": row.date\n\t\t\t};\n\t\t});\n\t\treturn updatedArray.filter((row) => { \n\t\t\tif (Input1.text) {\n\t\t\t\treturn row.name.toLowerCase().includes(Input1.text.toLowerCase())\n\t\t\t} else if (Select1.selectedOptionValue) {\n\t\t\t\treturn row.pod == Select1.selectedOptionValue\n\t\t\t} else {\n\t\t\t\treturn true;\n\t\t\t}\n\t\t})\n\t}\n}",
-        "variables": [
-          {
-            "name": "results",
-            "value": []
-          }
-        ]
-      },
-      "id": "61bc40a3fb2237737d467717",
-      "deleted": false,
-      "userPermissions": [
-        "read:actions",
-        "execute:actions",
-        "manage:actions"
-      ]
-    },
-    {
-      "unpublishedCollection": {
         "name": "JSObject1",
         "pageId": "Standup Form",
         "pluginId": "js-plugin",
         "pluginType": "JS",
         "defaultToBranchedActionIdsMap": {
-          "61cbfe5506220a20ef3ec2f8": "61cbfe5506220a20ef3ec2f8",
-          "61cbfe5506220a20ef3ec2f6": "61cbfe5506220a20ef3ec2f6"
+          "61cbfe5506220a20ef3ec2f8": "61cc070506220a20ef3ec37e",
+          "61cbfe5506220a20ef3ec2f6": "61cc070506220a20ef3ec380"
         },
         "actionIds": [],
         "archivedActionIds": [],
@@ -126,8 +34,8 @@
         "pluginId": "js-plugin",
         "pluginType": "JS",
         "defaultToBranchedActionIdsMap": {
-          "61cbfe5506220a20ef3ec2f8": "61cbfe5506220a20ef3ec2f8",
-          "61cbfe5506220a20ef3ec2f6": "61cbfe5506220a20ef3ec2f6"
+          "61cbfe5506220a20ef3ec2f8": "61cc070506220a20ef3ec37e",
+          "61cbfe5506220a20ef3ec2f6": "61cc070506220a20ef3ec380"
         },
         "actionIds": [],
         "defaultToBranchedArchivedActionIdsMap": {},
@@ -146,53 +54,7 @@
           }
         ]
       },
-      "id": "61bc40a3fb2237737d467718",
-      "deleted": false,
-      "userPermissions": [
-        "read:actions",
-        "execute:actions",
-        "manage:actions"
-      ]
-    },
-    {
-      "unpublishedCollection": {
-        "name": "Airtable_Transformer",
-        "pageId": "Todays Updates",
-        "pluginId": "js-plugin",
-        "pluginType": "JS",
-        "defaultToBranchedActionIdsMap": {},
-        "actionIds": [],
-        "archivedActionIds": [],
-        "actions": [],
-        "archivedActions": [],
-        "body": "export default {\n\tresults: [],\n\tgetUpdates: () => {\n\t\tconst updatedArray = fetchStandup.data.map((row) => {\n\t\t\treturn {\n\t\t\t\t...row,\n\t\t\t\t\t\"Created At\": row.date\n\t\t\t};\n\t\t});\n\t\treturn updatedArray.filter((row) => { \n\t\t\tif (Input1.text) {\n\t\t\t\treturn row.name.toLowerCase().includes(Input1.text.toLowerCase())\n\t\t\t} else if (Select1.selectedOptionValue) {\n\t\t\t\treturn row.pod == Select1.selectedOptionValue\n\t\t\t} else {\n\t\t\t\treturn true;\n\t\t\t}\n\t\t})\n\t}\n}",
-        "variables": [
-          {
-            "name": "results",
-            "value": []
-          }
-        ]
-      },
-      "publishedCollection": {
-        "name": "Airtable_Transformer",
-        "pageId": "Todays Updates",
-        "pluginId": "js-plugin",
-        "pluginType": "JS",
-        "defaultToBranchedActionIdsMap": {},
-        "actionIds": [],
-        "defaultToBranchedArchivedActionIdsMap": {},
-        "archivedActionIds": [],
-        "actions": [],
-        "archivedActions": [],
-        "body": "export default {\n\tresults: [],\n\tgetUpdates: () => {\n\t\tconst updatedArray = fetchStandup.data.map((row) => {\n\t\t\treturn {\n\t\t\t\t...row,\n\t\t\t\t\t\"Created At\": row.date\n\t\t\t};\n\t\t});\n\t\treturn updatedArray.filter((row) => { \n\t\t\tif (Input1.text) {\n\t\t\t\treturn row.name.toLowerCase().includes(Input1.text.toLowerCase())\n\t\t\t} else if (Select1.selectedOptionValue) {\n\t\t\t\treturn row.pod == Select1.selectedOptionValue\n\t\t\t} else {\n\t\t\t\treturn true;\n\t\t\t}\n\t\t})\n\t}\n}",
-        "variables": [
-          {
-            "name": "results",
-            "value": []
-          }
-        ]
-      },
-      "id": "61cc060f06220a20ef3ec33d",
+      "id": "61cc070506220a20ef3ec383",
       "deleted": false,
       "userPermissions": [
         "read:actions",
@@ -238,7 +100,53 @@
           }
         ]
       },
-      "id": "61cc060f06220a20ef3ec33c",
+      "id": "61cc070506220a20ef3ec382",
+      "deleted": false,
+      "userPermissions": [
+        "read:actions",
+        "execute:actions",
+        "manage:actions"
+      ]
+    },
+    {
+      "unpublishedCollection": {
+        "name": "Airtable_Transformer",
+        "pageId": "Todays Updates",
+        "pluginId": "js-plugin",
+        "pluginType": "JS",
+        "defaultToBranchedActionIdsMap": {},
+        "actionIds": [],
+        "archivedActionIds": [],
+        "actions": [],
+        "archivedActions": [],
+        "body": "export default {\n\tresults: [],\n\tgetUpdates: () => {\n\t\tconst updatedArray = fetchStandup.data.map((row) => {\n\t\t\treturn {\n\t\t\t\t...row,\n\t\t\t\t\t\"Created At\": row.date\n\t\t\t};\n\t\t});\n\t\treturn updatedArray.filter((row) => { \n\t\t\tif (Input1.text) {\n\t\t\t\treturn row.name.toLowerCase().includes(Input1.text.toLowerCase())\n\t\t\t} else if (Select1.selectedOptionValue) {\n\t\t\t\treturn row.pod == Select1.selectedOptionValue\n\t\t\t} else {\n\t\t\t\treturn true;\n\t\t\t}\n\t\t})\n\t}\n}",
+        "variables": [
+          {
+            "name": "results",
+            "value": []
+          }
+        ]
+      },
+      "publishedCollection": {
+        "name": "Airtable_Transformer",
+        "pageId": "Todays Updates",
+        "pluginId": "js-plugin",
+        "pluginType": "JS",
+        "defaultToBranchedActionIdsMap": {},
+        "actionIds": [],
+        "defaultToBranchedArchivedActionIdsMap": {},
+        "archivedActionIds": [],
+        "actions": [],
+        "archivedActions": [],
+        "body": "export default {\n\tresults: [],\n\tgetUpdates: () => {\n\t\tconst updatedArray = fetchStandup.data.map((row) => {\n\t\t\treturn {\n\t\t\t\t...row,\n\t\t\t\t\t\"Created At\": row.date\n\t\t\t};\n\t\t});\n\t\treturn updatedArray.filter((row) => { \n\t\t\tif (Input1.text) {\n\t\t\t\treturn row.name.toLowerCase().includes(Input1.text.toLowerCase())\n\t\t\t} else if (Select1.selectedOptionValue) {\n\t\t\t\treturn row.pod == Select1.selectedOptionValue\n\t\t\t} else {\n\t\t\t\treturn true;\n\t\t\t}\n\t\t})\n\t}\n}",
+        "variables": [
+          {
+            "name": "results",
+            "value": []
+          }
+        ]
+      },
+      "id": "61cc070506220a20ef3ec381",
       "deleted": false,
       "userPermissions": [
         "read:actions",
@@ -252,10 +160,7 @@
         "pageId": "Standup Form",
         "pluginId": "js-plugin",
         "pluginType": "JS",
-        "defaultToBranchedActionIdsMap": {
-          "61cbfe5506220a20ef3ec2f8": "61cbfe5506220a20ef3ec2f8",
-          "61cbfe5506220a20ef3ec2f6": "61cbfe5506220a20ef3ec2f6"
-        },
+        "defaultToBranchedActionIdsMap": {},
         "actionIds": [],
         "archivedActionIds": [],
         "actions": [],
@@ -277,10 +182,7 @@
         "pageId": "Standup Form",
         "pluginId": "js-plugin",
         "pluginType": "JS",
-        "defaultToBranchedActionIdsMap": {
-          "61cbfe5506220a20ef3ec2f8": "61cbfe5506220a20ef3ec2f8",
-          "61cbfe5506220a20ef3ec2f6": "61cbfe5506220a20ef3ec2f6"
-        },
+        "defaultToBranchedActionIdsMap": {},
         "actionIds": [],
         "defaultToBranchedArchivedActionIdsMap": {},
         "archivedActionIds": [],
@@ -298,7 +200,99 @@
           }
         ]
       },
-      "id": "61cc060f06220a20ef3ec33e",
+      "id": "61cc070506220a20ef3ec385",
+      "deleted": false,
+      "userPermissions": [
+        "read:actions",
+        "execute:actions",
+        "manage:actions"
+      ]
+    },
+    {
+      "unpublishedCollection": {
+        "name": "Github_Transformer",
+        "pageId": "Todays Updates",
+        "pluginId": "js-plugin",
+        "pluginType": "JS",
+        "defaultToBranchedActionIdsMap": {},
+        "actionIds": [],
+        "archivedActionIds": [],
+        "actions": [],
+        "archivedActions": [],
+        "body": "export default {\n\tresults: [],\n\tgetCriticalIssues: () => {\n\t\treturn fetchCriticalIssues.data.map((issue) => { \n\t\t\treturn { \n\t\t\t\ttitle: issue.title, \n\t\t\t\tuser: issue.user.login, \n\t\t\t\tage: issue.create_at, \n\t\t\t\tlabels: issue.labels.map((label) => label.name).join(', '),\n\t\t\t\tassignees: issue.assignees.map((label) => label.login).join(', '), \n\t\t\t\tlink: issue.html_url, \n\t\t\t\tbody: issue.body, \n\t\t\t\tnumber: issue.number\n\t\t\t};\n\t\t})\n\t}\n}",
+        "variables": [
+          {
+            "name": "results",
+            "value": []
+          }
+        ]
+      },
+      "publishedCollection": {
+        "name": "Github_Transformer",
+        "pageId": "Todays Updates",
+        "pluginId": "js-plugin",
+        "pluginType": "JS",
+        "defaultToBranchedActionIdsMap": {},
+        "actionIds": [],
+        "defaultToBranchedArchivedActionIdsMap": {},
+        "archivedActionIds": [],
+        "actions": [],
+        "archivedActions": [],
+        "body": "export default {\n\tresults: [],\n\tgetCriticalIssues: () => {\n\t\treturn fetchCriticalIssues.data.map((issue) => { \n\t\t\treturn { \n\t\t\t\ttitle: issue.title, \n\t\t\t\tuser: issue.user.login, \n\t\t\t\tage: issue.create_at, \n\t\t\t\tlabels: issue.labels.map((label) => label.name).join(', '),\n\t\t\t\tassignees: issue.assignees.map((label) => label.login).join(', '), \n\t\t\t\tlink: issue.html_url, \n\t\t\t\tbody: issue.body, \n\t\t\t\tnumber: issue.number\n\t\t\t};\n\t\t})\n\t}\n}",
+        "variables": [
+          {
+            "name": "results",
+            "value": []
+          }
+        ]
+      },
+      "id": "61cc070506220a20ef3ec384",
+      "deleted": false,
+      "userPermissions": [
+        "read:actions",
+        "execute:actions",
+        "manage:actions"
+      ]
+    },
+    {
+      "unpublishedCollection": {
+        "name": "Airtable_Transformer",
+        "pageId": "Todays Updates",
+        "pluginId": "js-plugin",
+        "pluginType": "JS",
+        "defaultToBranchedActionIdsMap": {},
+        "actionIds": [],
+        "archivedActionIds": [],
+        "actions": [],
+        "archivedActions": [],
+        "body": "export default {\n\tresults: [],\n\tgetUpdates: () => {\n\t\tconst updatedArray = fetchStandup.data.map((row) => {\n\t\t\treturn {\n\t\t\t\t...row,\n\t\t\t\t\t\"Created At\": row.date\n\t\t\t};\n\t\t});\n\t\treturn updatedArray.filter((row) => { \n\t\t\tif (Input1.text) {\n\t\t\t\treturn row.name.toLowerCase().includes(Input1.text.toLowerCase())\n\t\t\t} else if (Select1.selectedOptionValue) {\n\t\t\t\treturn row.pod == Select1.selectedOptionValue\n\t\t\t} else {\n\t\t\t\treturn true;\n\t\t\t}\n\t\t})\n\t}\n}",
+        "variables": [
+          {
+            "name": "results",
+            "value": []
+          }
+        ]
+      },
+      "publishedCollection": {
+        "name": "Airtable_Transformer",
+        "pageId": "Todays Updates",
+        "pluginId": "js-plugin",
+        "pluginType": "JS",
+        "defaultToBranchedActionIdsMap": {},
+        "actionIds": [],
+        "defaultToBranchedArchivedActionIdsMap": {},
+        "archivedActionIds": [],
+        "actions": [],
+        "archivedActions": [],
+        "body": "export default {\n\tresults: [],\n\tgetUpdates: () => {\n\t\tconst updatedArray = fetchStandup.data.map((row) => {\n\t\t\treturn {\n\t\t\t\t...row,\n\t\t\t\t\t\"Created At\": row.date\n\t\t\t};\n\t\t});\n\t\treturn updatedArray.filter((row) => { \n\t\t\tif (Input1.text) {\n\t\t\t\treturn row.name.toLowerCase().includes(Input1.text.toLowerCase())\n\t\t\t} else if (Select1.selectedOptionValue) {\n\t\t\t\treturn row.pod == Select1.selectedOptionValue\n\t\t\t} else {\n\t\t\t\treturn true;\n\t\t\t}\n\t\t})\n\t}\n}",
+        "variables": [
+          {
+            "name": "results",
+            "value": []
+          }
+        ]
+      },
+      "id": "61cc070506220a20ef3ec386",
       "deleted": false,
       "userPermissions": [
         "read:actions",
